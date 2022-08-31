@@ -1,34 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="success.css">
-    <title>Form Submitted</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="success.css">
+  <title>Form Submitted</title>
 </head>
+
 <body style="background: #09085a;">
-    <header>
-        <img style="padding-top: 15px; padding-left: 10px;" src="images/Choppa Exchange.png" width="200px;">
-    </header>
-    <div class="success-con">
-        <div class="popup" id="popup">
-          <img src="images/tick.png" width="150px" alt="">
-          <h2 style="color: #000;">Thank You!</h2>
-          <p style="color: #000;">Your details has been successfully submitted, Payments would be sent as soon as possible. Thanks!</p>
-          <a href="sell.html"><button type="button" onclick="closePopup()">OK</button></a>
-        </div>
-      </div>
-    
-      <script>
-        let popup = document.getElementById("popup");
-    
-        function openPopup() {
-          popup.classList.add("open-popup");
-        }
-        function closePopup() {
-          popup.classList.remove("open-popup");
-        }
-      </script>
+  <header>
+    <img style="padding-top: 15px; padding-left: 10px;" src="images/Choppa Exchange.png" width="200px;">
+  </header>
+  <div class="success-con">
+    <div class="popup" id="popup">
+      <img src="images/tick.png" width="150px" alt="">
+      <h2 style="color: #000;">Thank You!</h2>
+      <p style="color: #000;">Your details has been successfully submitted, Payments would be sent as soon as possible.
+        Thanks!</p>
+      <a href="sell.html"><button type="button" onclick="closePopup()">OK</button></a>
+    </div>
+  </div>
+
+  <script>
+    let popup = document.getElementById("popup");
+
+    function openPopup() {
+      popup.classList.add("open-popup");
+    }
+    function closePopup() {
+      popup.classList.remove("open-popup");
+    }
+  </script>
 </body>
+
 </html>
